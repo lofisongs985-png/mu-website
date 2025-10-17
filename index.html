@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>YourName — Connect</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:#0f1724;color:#e6eef8;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    .card{width:100%;max-width:460px;background:linear-gradient(180deg,#0b1220 0%, #071027 100%);border-radius:16px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,.6);text-align:center}
+    img.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.06)}
+    h1{margin:14px 0 6px;font-size:20px}
+    p.bio{margin:0 0 14px;color:#b6c6d8;font-size:14px}
+    .buttons{display:grid;gap:10px;margin:12px 0}
+    a.btn{display:inline-block;padding:12px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.primary{background:#16a34a;color:white}
+    a.secondary{background:rgba(255,255,255,.06);color:#dbeafe;border:1px solid rgba(255,255,255,.04)}
+    .updates{background:rgba(255,255,255,.02);padding:12px;border-radius:10px;margin-top:14px;text-align:left}
+    .updates h3{margin:0 0 8px;font-size:15px}
+    form.subscribe, form.dm{display:flex;flex-direction:column;gap:8px;margin-top:12px;text-align:left}
+    input[type="email"], input[type="text"], textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:transparent;color:inherit}
+    input[type="submit"]{padding:10px 12px;border-radius:8px;border:0;background:#2563eb;color:white;font-weight:600;cursor:pointer}
+    footer{margin-top:14px;font-size:12px;color:#9fb0c9;text-align:center}
+    label{font-size:13px;color:#b6c6d8}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="avatar" src="C:\Users\admin\Downloads\Gemini_Generated_Image_7ywcwm7ywcwm7ywc.png" alt="Profile"/>
+    <h1>Your Name / Channel</h1>
+    <p class="bio">Short line about you — e.g. "Creator • Islamic content • Animations".</p>
+
+    <div class="buttons">
+      <a class="btn primary" href="https://www.instagram.com/arman_x_x_0.2/" target="_blank">My Personal Id</a>
+      <a class="btn secondary" href="https://www.instagram.com/codewith.arman/?next=%2F" target="_blank">Instagram</a>
+      <a class="btn secondary" href="https://youtube.com/channel/..." target="_blank">YouTube</a>
+      <a class="btn secondary" href="https://whatsapp.com/channel/0029VbBd0GeHbFV00PiKhb1F">All Code</a>
+    </div>
+
+    <div class="updates">
+      <h3>Latest update</h3>
+      <p id="updateText">Yahan aapka chhota Instagram update/notice dikhega. (Example: Naya video aaya hai — check YouTube!)</p>
+    </div>
+
+    <!-- Subscribe Form -->
+    <form class="subscribe" method="POST" action="https://formspree.io/f/your-form-id">
+      <label>Email/Phone for updates:</label>
+      <input type="email" name="email" placeholder="Apna email/phone daalein" required />
+      <input type="submit" value="Join" />
+    </form>
+
+    <!-- DM/Message Form -->
+    <form class="dm" method="POST" action="https://formspree.io/f/your-form-id">
+      <label>Apna Naam:</label>
+      <input type="text" name="name" placeholder="Aapka Naam" required/>
+      <label>Message / Code Request:</label>
+      <textarea name="message" placeholder="Apna message ya code request yahan bhejein" rows="4" required></textarea>
+      <input type="submit" value="Send DM"/>
+    </form>
+
+    <footer>Link in bio — update karne ke liye HTML edit karein</footer>
+  </div>
+
+  <script>
+    // Update text dynamically if needed
+    // document.getElementById('updateText').innerText = "Naya update: Live session aaj 8pm!";
+  </script>
+</body>
+</html>
